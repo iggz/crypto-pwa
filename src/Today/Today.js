@@ -28,8 +28,8 @@ class Today extends Component {
     // This is called when an instance of a component is being created and inserted into the DOM.
     componentWillMount() {
         // establish a connection to Pusher
-        this.pusher = new Pusher('APP_KEY', {
-            cluster: 'CLUSTER',
+        this.pusher = new Pusher('13c554cffdee7cd2134a', {
+            cluster: 'us2',
             encrypted: true
         });
         // subscribe to the 'coin-prices' channel
